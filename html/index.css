@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    user-select: none;
+    overflow: hidden; 
+}
+
+.bg {
+    display: flex;
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    width: 25.8vw;
+    height: 13vw;
+    background-image: url("img/bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.backbg {
+    position: relative;
+    width: 20vw;
+    height: 10vw;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+.frontdiv {
+    float: left;
+    width: 9.75vw;
+    height: 5vw;
+    background-color: rgba(0, 0, 0, 0.185); 
+}
+
+.backdiv {
+    position: relative;
+    width: 9.45229166666666vw;
+    height: 5vw;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+.FrontSpeedBox {
+    position: relative;
+    float: left;
+    width: 4.497760416666666vw;
+    height: 3.275677083333333vw;
+    border-radius: 0.11338541666666667vw;
+    border: 0.11338541666666667vw solid #030303;
+    background: #000;
+}
+
+.FrontLimitBox {
+    position: relative;
+    left: 0.45312499999999994vw;
+    width: 4.497760416666666vw;
+    height: 3.275677083333333vw;
+    border-radius: 0.11338541666666667vw;
+    border: 0.11338541666666667vw solid #030303;
+    background: #000;
+}
+
+.SpeedTextBox {
+    position: relative;
+    top: 0.3vw;
+    width: 3.25921875vw;
+    height: 0.5vw;
+    margin: auto;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.SameText {
+    display: flex;
+    color: #CFDE47;
+    font-family: "Ticking Timebomb BB";
+    font-size: 0.54125vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03786458333333333vw;
+}
+
+.XmitText {
+    color: #CFDE47;
+    font-family: "Ticking Timebomb BB";
+    font-size: 0.54125vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03786458333333333vw;
+    text-align: right;
+}
+
+.FrontSpeedText {
+    color: #CFDE47;
+    font-family: "Ticking Timebomb BB";
+    font-size: 1.8047916666666668vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12635416666666668vw;
+    text-shadow: 0vw 0vw 0.5208333333333333vw rgba(207, 222, 71, 0.25);
+    text-align: center;
+    margin-top: 0.8vw;
+}
+
+.LockTextBox {
+    position: absolute;
+    width: 3vw;
+    height: 1vw;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lockText {
+    display: flex;
+    color: #FF2345;
+    font-family: "Ticking Timebomb BB";
+    font-size: 0.54125vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03786458333333333vw;
+}
+
+.fastText {
+    margin-top: -0.53vw;
+    color: #FF2345;
+    font-family: "Ticking Timebomb BB";
+    font-size: 0.54125vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03786458333333333vw;
+    text-align: right;
+}
+
+.FrontlockText {
+    position: absolute;
+    width: 3vw;
+    height: 2vw;
+    color: #FF2345;
+    font-family: "Ticking Timebomb BB";
+    font-size: 1.8047916666666668vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12635416666666668vw;
+    text-align: center;
+    text-shadow: 0vw 0vw 0.5208333333333333vw rgba(255, 35, 69, 0.25);
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.FrontlockText::placeholder {
+    color: #FF2345;
+    font-family: "Ticking Timebomb BB";
+    font-size: 1.8047916666666668vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12635416666666668vw;
+    text-align: center;
+    text-shadow: 0vw 0vw 0.5208333333333333vw rgba(255, 35, 69, 0.25);
+    content: "OFF"; 
+}
+
+
+.FrontLockSvg {
+    position: absolute;
+    width: 0.5vw;
+    height: 1.4vw;
+    top: 53%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.FrontLockSvg svg {
+    position: relative;
+    top: -0.3vw;
+    left: -0.3vw;
+    width: 1vw;
+    height: 2vw;
+}
+
+.FrontTextSvg {
+    position: relative;
+    top: 0.6vw;  
+    margin: auto;
+    background-image: url("img/frontsvg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 9.5vw;
+    height: 0.3vw;
+}
+
+.FrontText {
+    margin-top: 0.3vw;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 0.48vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.03020833333333333vw;
+    text-align: center;
+}
+
+/* REAR BOX */
+
+.RearSpeedBox {
+    position: relative;
+    float: left;
+    width: 4.497760416666666vw;
+    height: 3.275677083333333vw;
+    border-radius: 0.11338541666666667vw;
+    border: 0.11338541666666667vw solid #030303;
+    background: #000;
+}
+
+.RearSpeedTextBox {
+    position: relative;
+    top: 0.3vw;
+    width: 3.25921875vw;
+    height: 0.5vw;
+    margin: auto;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.rearlockText {
+    display: flex;
+    color: #FF2345;
+    font-family: "Ticking Timebomb BB";
+    font-size: 0.54125vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03786458333333333vw;
+}
+
+.rearfastText {
+    color: #FF2345;
+    font-family: "Ticking Timebomb BB";
+    font-size: 0.54125vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03786458333333333vw;
+    text-align: right;
+}
+
+.rearSameText {
+    display: flex;
+    color: #CFDE47;
+    font-family: "Ticking Timebomb BB";
+    font-size: 0.54125vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03786458333333333vw;
+}
+
+.rearXmitText {
+    color: #CFDE47;
+    font-family: "Ticking Timebomb BB";
+    font-size: 0.54125vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.03786458333333333vw;
+    text-align: right;
+}
+
+.rearSpeedText {
+    color: #CFDE47;
+    font-family: "Ticking Timebomb BB";
+    font-size: 1.8047916666666668vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12635416666666668vw;
+    text-shadow: 0vw 0vw 0.5208333333333333vw rgba(207, 222, 71, 0.25);
+    text-align: center;
+    margin-top: 0.8vw;
+}
+
+.rearLockTextBox {
+    position: absolute;
+    top: 0.3vw;
+    width: 3.25921875vw;
+    height: 0.5vw;
+    margin: auto;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.rearLimitBox {
+    position: relative;
+    left: 0.45312499999999994vw;
+    width: 4.497760416666666vw;
+    height: 3.275677083333333vw;
+    border-radius: 0.11338541666666667vw;
+    border: 0.11338541666666667vw solid #030303;
+    background: #000;
+}
+
+.patrolspeed {
+    float: left;
+    width: 9.75vw;
+    height: 5vw;
+    background-color: rgba(0, 0, 0, 0.185); 
+}
+
+.PatrolSpeedBox {
+    width: 9.454374999999999vw;
+    height: 2.716041666666667vw;
+    border-radius: 0.11338541666666667vw;
+    border: 0.11338541666666667vw solid #030303;
+    background: #000;
+}
+
+
+.ContainerBoxLeft {
+    position: relative;
+    width: 3vw;
+    left: 0.2vw;
+    height: 2.2vw;
+    top: -0.1vw;
+}
+
+.PatrolSpeedText {
+    position: relative;
+    color: #47DE4D;
+    font-family: "Ticking Timebomb BB";
+    font-size: 2.2vw;
+    text-shadow: 0vw 0vw 0.5208333333333333vw rgba(71, 222, 77, 0.50);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.12635416666666668vw;
+    text-align: center;
+    top: -1.8vw;
+}
+
+.ContainerBoxRight {
+    position: relative;
+    width: 3vw;
+    height: 1.5vw;
+    top: -3.8vw;
+    left: 6.4vw;
+}
+
+.PatrolSpeedSvg {
+    position: relative;
+    width: 9.454322916666666vw;
+    height: 0.2975vw;
+    top: 1vw;
+    background-image: url("img/patrolspeedsvg.png");
+    background-size:cover;
+    background-repeat: no-repeat; 
+}   
+
+.PatrolSpeedTextsvg {
+    position: relative;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 0.4316145833333334vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.03020833333333333vw;
+    text-align: center;
+    top: 0.7vw;
+}
+
+.platdiv {
+    position: relative;
+    left: 0.3vw;
+    float: left;
+    width: 10vw;
+    height: 5vw;
+    background-color: rgba(0, 0, 0, 0.185); 
+}
+
+.FrontPlateSvg {
+    position: relative;
+    width: 4.552604166666666vw;
+    height: 1.7460416666666665vw;
+    top: 0.5vw;
+    /* background-color: red; */
+}
+
+.RearPlateSvg {
+    position: relative;
+    top: -1.6vw;
+    left: 5vw;
+}
+
+.FrontLsText {
+    position: relative;
+    top: -1.85vw;
+    left: 0.3vw;
+    color: rgba(255, 255, 255, 0.41);
+    font-family: Inter;
+    font-size: 0.2593229166666667vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.FrontTextdiv {
+    position: relative;
+    width: 1.88703125vw;
+    height: 0.2927604166666667vw;
+    /* background-color: red; */
+    top: -2.18vw;
+    left: 1.4vw;
+    fill: rgba(255, 255, 255, 0.41);
+    background-image: url("img/ResmonSystem.svg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.FrontLspdimg {
+    position: relative;
+    top: -2.5vw;
+    left: 4vw;
+    width: 0.34921875vw;
+    height: 0.34921875vw;
+    background-image: url("img/lspd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.FrontPlatText {
+    position: relative;
+    top: -2.3vw;
+    text-align: center;
+    color: #353535;
+    font-family: Inter;
+    font-size: 0.7053124999999999vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.FrontPlateSvgs {
+    position: relative;
+    top: 2.2vw;
+    width: 4.811197916666667vw;
+    height: 0.2975vw;
+    background-image: url("img/frontplate.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.FrotPlateSvgText {
+    position: relative;
+    top: 1.8vw;
+    left: 1.6vw;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.4316145833333334vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.03020833333333333vw;
+}
+
+.rearPlateSvg {
+    position: relative;
+    width: 4.552604166666666vw;
+    height: 1.7460416666666665vw;
+    top: 0.5vw;
+    /* background-color: red; */
+}
+
+.rearLsText {
+    position: relative;
+    top: -1.88vw;
+    left: 0.3vw;
+    color: rgba(255, 255, 255, 0.41);
+    font-family: Inter;
+    font-size: 0.2593229166666667vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.rearTextdiv {
+    position: relative;
+    width: 1.88703125vw;
+    height: 0.2927604166666667vw;
+    /* background-color: red; */
+    top: -2.18vw;
+    left: 1.4vw;
+    fill: rgba(255, 255, 255, 0.41);
+    background-image: url("img/ResmonSystem.svg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.rearLspdimg {
+    position: relative;
+    top: -2.5vw;
+    left: 4vw;
+    width: 0.34921875vw;
+    height: 0.34921875vw;
+    background-image: url("img/lspd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rearPlatText {
+    position: relative;
+    top: -2.3vw;
+    text-align: center;
+    color: #353535;
+    font-family: Inter;
+    font-size: 0.7053124999999999vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.rearPlateSvgs {
+    position: relative;
+    top: 2.2vw;
+    width: 4.811197916666667vw;
+    height: 0.2975vw;
+    background-image: url("img/frontplate.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rearPlateSvgText {
+    position: relative;
+    top: -0.7vw;
+    left: 6.8vw;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.4316145833333334vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.03020833333333333vw;
+}
+
+.offbuton, .plus-btn, .minus-btn {
+    position: absolute;
+    top: 5vh;
+    right: 0.7vw;
+    cursor: pointer;
+    z-index: 5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #6c757d;
+    font-size: 1.2vh;
+}
+
+.plus-btn {
+ 
+    top: 9vh;
+}
+
+.minus-btn {
+    top: 7vh;
+}
+
+@font-face {
+    font-family: "Ticking Timebomb BB";
+    src: url(font/TickingTimebombBB.ttf);
+}
+  
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input {
+    background: transparent; 
+    border: none; 
+    outline: none; 
+}
+
+
